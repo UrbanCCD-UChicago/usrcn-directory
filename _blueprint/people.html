@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+{% for row in data %}
+
+<div class="container">
+  {% if row.live == 'X' %}
+  <div class="jumbotron">
+    <h1>{{ row.first }} {{row.last }}</h1>
+    <img src="{{ row.image }}" width="150"></img>
+    <ul>
+      <li>email: {{ row.email }}</li>
+      <li>title: {{ row.title }}</li>
+      <li>institution: {{ row.institution }}</li>
+      <li><a href="{{ row.googleScholar }}">Google Scholar</a></li>
+      <li><a href="{{ row.personalProfile }}">Personal Profile</a></li>
+      <li>Tags: {{ row.tags }}</li>
+    </ul>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+
+{% endblock content %}
+
+
