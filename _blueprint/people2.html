@@ -1,8 +1,8 @@
-first,last,email,title,institution,googleScholar,personalProfile
+guid,first,last,email,title,institution,googleScholar,personalProfile,image
 <br>
 {% for row in data %}
   {% if row.live == 'X' %}
-    {{ row.first }},{{row.last }},{{ row.email }},{{ row.title }},{{ row.institution }},{{ row.googleScholar }},{{ row.personalProfile }}
+    {{row.guid}},{{ row.first }},{{row.last }},{{ row.email }},{{ row.title }},{{ row.institution }},{{ row.googleScholar }},{{ row.personalProfile }},{{ row.image}}
     <br>
   {% endif %}
 {% endfor %}
