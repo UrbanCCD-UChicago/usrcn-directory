@@ -1,0 +1,11 @@
+first,last,email,title,institution,googleScholar,personalProfile
+<br>
+{% for row in data %}
+  {% if row.live == 'X' %}
+    {{ row.first }},{{row.last }},{{ row.email }},{{ row.title }},{{ row.institution }},{{ row.googleScholar }},{{ row.personalProfile }}
+    <br>
+  {% endif %}
+{% endfor %}
+
+
+
