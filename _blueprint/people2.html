@@ -2,7 +2,7 @@ guid,first,last,email,title,institution,googleScholar,personalProfile,image,dire
 <br>
 {% for row in data %}
   {% if row.live == 'X' %}
-  {{row.guid}},{{ row.first }},{{row.last }},{{ row.email }},{{ row.title }},{{ row.institution }},{{ row.googleScholar }},{{ row.personalProfile }},{{ row.image}}, {{row.directory}}
+  {{row.guid}},{{ row.first }},{{row.last }},{{ row.email }},{{ row.title }},{{ row.institution }},{{ row.googleScholar }},{{ row.personalProfile }},{{ row.image}},{{row.directory}}
     <br>
   {% endif %}
 {% endfor %}
